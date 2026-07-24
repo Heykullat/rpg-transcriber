@@ -4,9 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-venv/
-ENV/
 build/
 develop-eggs/
 dist/
@@ -23,6 +20,17 @@ wheels/
 .installed.cfg
 *.egg
 
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+
 # IDE
 .vscode/
 .idea/
@@ -30,6 +38,30 @@ wheels/
 *.swo
 *~
 
-# Output and cache
+# Transcription output (contains recorded session audio and transcripts)
 output/
 *.log
+
+# Media files — never commit recordings
+*.wav
+*.mp3
+*.flac
+*.mkv
+*.mp4
+*.avi
+*.mov
+
+# Downloaded Whisper model weights
+models/
+*.bin
+*.ct2
+
+# Personal, campaign-specific hotword list.
+# Commit hotwords.example.txt instead.
+hotwords.txt
+hotwords_*.txt
+!hotwords.example.txt
+
+# OS
+.DS_Store
+Thumbs.db

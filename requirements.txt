@@ -1,0 +1,16 @@
+# Python dependencies.
+#
+# System requirement NOT installable via pip: FFmpeg must be on your PATH.
+# Tkinter ships with the standard library on Windows and macOS; on Debian/
+# Ubuntu install it with:  sudo apt install python3-tk
+#
+# GPU acceleration is optional. To use CUDA you also need the NVIDIA cuBLAS
+# and cuDNN runtime libraries — see the faster-whisper README. Without them
+# the app automatically falls back to CPU.
+
+# Whisper inference via CTranslate2. >=1.0.0 is required for the `hotwords`
+# parameter used to bias transcription toward campaign vocabulary.
+faster-whisper>=1.0.0
+
+# Audio buffer handling in load_wav().
+numpy>=1.24

@@ -1,0 +1,87 @@
+# Hotwords — example file
+#
+# Whisper biases its output toward the terms listed here, which dramatically
+# improves recognition of invented names, places and campaign-specific jargon
+# that a general-purpose speech model has never seen.
+#
+# Usage:
+#   1. Copy this file to "hotwords.txt"
+#   2. Replace the entries below with your own campaign's terms
+#
+# "hotwords.txt" is git-ignored, so your campaign data never leaves your machine.
+#
+# Format rules (see load_hotwords() in main.py):
+#   - Lines starting with "#", "##" or "---" are ignored
+#   - Parenthesised notes are stripped: "Zephyr (Zeph)" is read as "Zephyr"
+#   - One term per line; duplicates are removed automatically
+
+---
+
+## PLAYER CHARACTERS
+
+Aeliana
+Thorgar
+Nyx
+Bramblefoot
+
+---
+
+## NON-PLAYER CHARACTERS
+
+Captain Roderick
+Sister Malva
+The Tinkerer
+Lord Ashgrave
+
+---
+
+## VILLAINS AND ENTITIES
+
+The Hollow King
+Vessendrel
+The Choir Beneath
+
+---
+
+## LOCATIONS
+
+Greymarch
+Thornwatch Keep
+The Sunken Bazaar
+Hallowmere
+
+---
+
+## FACTIONS AND ORGANISATIONS
+
+The Ashen Covenant
+Order of the Silver Chain
+Greymarch City Watch
+
+---
+
+## ITEMS AND ARTEFACTS
+
+Sunderclaw
+The Widow's Lantern
+Compass of the Drowned
+
+---
+
+## CAMPAIGN LORE TERMS
+
+The Long Dusk
+Bindingstone
+Riftglass
+
+---
+
+## NICKNAMES AND MISHEARD VARIANTS
+#
+# Add the ways your table actually pronounces things, plus the spellings the
+# transcriber tends to get wrong. This section usually has the biggest impact.
+
+Aely (Aeliana)
+Thorg (Thorgar)
+Bramble (Bramblefoot)
+Grey March (Greymarch)
