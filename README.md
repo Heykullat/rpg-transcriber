@@ -32,12 +32,11 @@ This tool solves both. Because recordings made with OBS keep remote players and 
 | **Tkinter** | Desktop GUI (standard library — no extra runtime) |
 | **threading** | Non-blocking UI and concurrent per-track transcription |
 
-## Screenshot
+## Screenshots
 
-<!-- SCREENSHOT / DEMO GIF GOES HERE -->
-<!-- Suggested: a GIF of a run in progress showing both progress bars filling and the log scrolling. -->
-
-> _Screenshot / demo GIF to be added._
+| Idle | Transcribing | Done |
+|---|---|---|
+| ![Idle state, waiting for a video to be selected](assets/idle.png) | ![Both tracks transcribing in parallel with independent progress bars and ETAs](assets/transcribing.png) | ![Windows toast notification confirming the session finished](assets/done.png) |
 
 ## Requirements
 
